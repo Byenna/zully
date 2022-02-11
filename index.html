@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zulfugart Webshop</title>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <script src="/assets/js/components/cart.js"></script>
+    <script src="/assets/js/components/navbar.js"></script>
+    <script src="/assets/js/components/footer.js"></script>
+    <!--<a href="productpage.html">Productpage</a>
+</head>
+
+
+
+
+
+<!-----------------------------------------------------------------NAVBAR & FILTERS BUTTONS---------------------------------------------------------------------------------------->
+
+<body>
+    <div id="app">
+
+        <nav-comp></nav-comp>
+        <shopping-cart ref="cartComponent"></shopping-cart>
+
+        <div class="header">
+
+            <img src="assets/images/logo.png" alt="logo">
+        </div>
+
+
+
+
+
+
+        <!----------------------------------------    ROW OF PRODUCTS & PRICES ------------------------------------------------------------------------>
+        <section class="content">
+
+        <div class="container">
+            <div class="row">
+              <div class="col gallery_product" category="Male">
+                
+                <div class="card" style="width: 18rem;"> 
+                    <div class="img-hover-zoom">                
+                    <img src="assets/images/Tshirts.png" class="card-img-top" alt="Skeleton">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="col gallery_product" category="Female">
+                
+                <div class="card" style="width: 18rem;"> 
+                    <div class="img-hover-zoom">
+                    <img src="assets/images/martialarts.jpg" class="card-img-top" alt="Martialarts">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="col gallery_product" category="Female">
+                
+                <div class="card" style="width: 18rem;"> 
+                    <div class="img-hover-zoom">
+                    <img src="assets/images/lotus.jpg" class="card-img-top" alt="Lotus">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col gallery_product" category="Kids">
+                
+                <div class="card" style="width: 18rem;"> 
+                    <div class="img-hover-zoom">
+                    <img src="assets/images/kidsLangeMouwen.jpg" class="card-img-top" alt="Kids">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="col gallery_product" category="Accessoires">
+                
+                <div class="card" style="width: 18rem;"> 
+                    <div class="img-hover-zoom">
+                    <img src="assets/images/modnkapjeSmaller.jpg" class="card-img-top" alt="mondkapjeSmaller">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="col gallery_product" category="Accessoires">
+                
+                <div class="card" style="width: 18rem;"> 
+                    <div class="img-hover-zoom">
+                    <img src="assets/images/syntheticMondkapje.jpg" class="card-img-top" alt="syntheticMondkapje">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col gallery_product" category="Accessoires">
+                
+                <div class="card" style="width: 18rem;"> 
+                    <div class="img-hover-zoom">
+                    <img src="assets/images/kopje.jpg" class="card-img-top" alt="koffieMok">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="col gallery_product" category="Accessoires">
+                
+                <div class="card" style="width: 18rem;"> 
+                    <div class="img-hover-zoom">
+                    <img src="assets/images/sporttas.jpg" class="card-img-top" alt="sportTas">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="col gallery_product" category="Kids">
+                
+                <div class="card" style="width: 18rem;"> 
+                    <div class="img-hover-zoom">
+                    <img src="assets/images/knuffelbeer.jpg" class="card-img-top" alt="knuffel">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+</section>
+
+<!-- 
+        <section class="content">
+            <main class="container-fluid">
+
+                <div class="row mt-4 mb-4">
+                    <div class="col-md-4 col-xl-4 gallery_product" category="Male">
+                        <div class="card mb-4">
+                            <div class="card-body text-center">
+                                <div class="img-hover-zoom">
+                                    <img src="assets/images/Tshirts.png" alt="Skeleton">
+                                </div>
+                                <h5 class="card-title">Skeleton</h5>
+                                <p>€19,99</p>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xl-4 gallery_product" category="Female">
+                        <div class="card mb-4">
+                            <div class="card-body text-center">
+                                <div class="img-hover-zoom">
+                                    <img src="assets/images/martialarts.jpg" alt="Martialarts">
+                                </div>
+
+                                <h5 class="card-title"> Martialarts</h5>
+                                <p>€24.99</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-4 gallery_product" category="Female">
+                        <div class="card mb-4">
+                            <div class="card-body text-center">
+                                <div class="img-hover-zoom">
+                                    <img src="assets/images/lotus.jpg" alt="lotus">
+                                </div>
+                                <h5 class="card-title">Lotus</h5>
+                                <p>€25,55</p>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-4 gallery_product" category="Kids">
+                        <div class="card mb-4">
+                            <div class="card-body text-center">
+                                <div class="img-hover-zoom">
+                                    <img src="assets/images/kidsLangeMouwen.jpg" alt="Kids">
+                                </div>
+                                <h5 class="card-title"> Kids</h5>
+                                <p>€30,65</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-4 gallery_product" category="Accessoires">
+                        <div class="card mb-4">
+                            <div class="card-body text-center">
+                                <div class="img-hover-zoom">
+                                    <img src="assets/images/modnkapjeSmaller.jpg" alt="mondkapjeSmaller">
+                                </div>
+                                <h5 class="card-title"> Mondkapje1</h5>
+                                <p>€10.00</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xl-4 gallery_product" category="Accessoires">
+                        <div class=" card mb-5">
+                            <div class="card-body text-center">
+                                <div class="img-hover-zoom">
+                                    <img src="assets/images/syntheticMondkapje.jpg" alt="syntheticMondkapje">
+                                </div>
+                                <h5 class="card-title"> Mondkapje2</h5>
+                                <p>€10.00</p>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xl-4 gallery_product" category="Accessoires">
+                        <div class="card mb-6">
+                            <div class="card-body text-center">
+                                <div class="img-hover-zoom">
+                                    <img src="assets/images/kopje.jpg" alt="koffieMok">
+                                </div>
+                                <h5 class="card-title"> Thee/Koffie Mok</h5>
+                                <p>€14,99</p>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xl-4 gallery_product" category="Accessoires">
+                        <div class="card mb-7">
+                            <div class="card-body text-center">
+                                <div class="img-hover-zoom">
+                                    <img src="assets/images/sporttas.jpg" alt="sportTas">
+                                </div>
+                                <h5 class="card-title"> Sporttas</h5>
+                                <p>€18,99</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 col-xl-4 gallery_product" category="Kids">
+                        <div class="card mb -8">
+                            <div class="card-body text-center">
+                                <div class="img-hover-zoom">
+                                    <img src="assets/images/knuffelbeer.jpg" alt="knuffel">
+                                </div>
+                                <h5 class="card-title">knuffelbeer</h5>
+                                <p>€18,99</p>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </main>
+
+
+
+
+
+
+
+
+
+
+
+        </section> -->
+
+
+
+
+
+        <!-----------------------------------------------CART ------------------------------------------------------------------>
+        <div class="cart">
+            <!--<!-- Title -->
+            <div class="Cart">
+                <p>Cart</p>
+            </div>
+
+            <!-- Product #1 -->
+
+
+            <div class="item">
+                <div class="buttons">
+                    <span class="delete-btn"></span>
+                    <span class="like-btn"></span>
+                </div>
+
+                <div class="imageSmaller">
+                    <img class="img-fluid" src="assets/images/tshirtssmallerCopy.png" alt="Skeleton Shirt SMaller">
+                </div>
+
+                <div class="description">
+                    <span>Skeleton Shirt</span>
+
+                </div>
+
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button">
+                        <img src="https://designmodo.com/demo/shopping-cart/plus.svg" alt="" />
+                    </button>
+                    <input type="text" name="name" value="1">
+                    <button class="minus-btn" type="button" name="button">
+                        <img src="https://designmodo.com/demo/shopping-cart/minus.svg" alt="" />
+                    </button>
+                </div>
+
+
+
+                <div class="total-price">19.99</div>
+            </div>
+
+            <!-- Product #2 -->
+            <div class="item">
+                <div class="buttons">
+                    <span class="delete-btn"></span>
+                    <span class="like-btn"></span>
+                </div>
+
+                <div class="imageSmaller">
+                    <img class="img-fluid" src="assets/images/martialartsSmaller.png" alt="" />
+                </div>
+
+                <div class="description">
+                    <span>martialarts</span>
+
+                </div>
+
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button">
+                        <img src="https://designmodo.com/demo/shopping-cart/plus.svg" alt="" />
+                    </button>
+                    <input type="text" name="name" value="1">
+                    <button class="minus-btn" type="button" name="button">
+                        <img src="https://designmodo.com/demo/shopping-cart/minus.svg" alt="" />
+                    </button>
+                </div>
+
+                <div class="total-price"></div>
+            </div>
+
+            <!-- Product #3 -->
+            <div class="item">
+                <div class="buttons">
+                    <span class="delete-btn"></span>
+                    <span class="like-btn"></span>
+                </div>
+
+                <div class="imageSmaller">
+                    <img class="img-fluid" src="assets/images/kidssmaller.png" alt="" />
+                </div>
+
+                <div class="description">
+                    <span>hoodie</span>
+
+                </div>
+
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button">
+                        <img src="https://designmodo.com/demo/shopping-cart/plus.svg" alt="" />
+                    </button>
+                    <input type="text" name="name" value="1">
+                    <button class="minus-btn" type="button" name="button">
+                        <img src="https://designmodo.com/demo/shopping-cart/minus.svg" alt="" />
+                    </button>
+                </div>
+
+                <div class="total-price">35,99</div>
+            </div>
+
+
+            <!--Product #4-->
+
+            <div class="item">
+                <div class="buttons">
+                    <span class="delete-btn"></span>
+                    <span class="like-btn"></span>
+                </div>
+
+                <div class="imageSmaller">
+                    <img class="img-fluid" src="assets/images/modnkapjeSmaller.jpg" alt="Modkapje" />
+                </div>
+
+                <div class="description">
+                    <span>mondkapje</span>
+
+                </div>
+
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button">
+                        <img src="https://designmodo.com/demo/shopping-cart/plus.svg" alt="" />
+                    </button>
+                    <input type="text" name="name" value="1">
+                    <button class="minus-btn" type="button" name="button">
+                        <img src="https://designmodo.com/demo/shopping-cart/minus.svg" alt="" />
+                    </button>
+                </div>
+
+                <div class="total-price">10,00</div>
+            </div>
+        </div>
+
+        <footer-comp></footer-comp>
+
+    </div>
+</body>
+
+
+
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/proof.js"></script>
+
+
+
+
+</html>

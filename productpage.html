@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product app</title>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <!--<link rel="stylesheet" type="text/css" heref="style.css">-->
+    <link rel="stylesheet" href="/assets/css/productpage.css">
+    <script src="/assets/js/components/cart.js"></script>
+    <script src="/assets/js/components/navbar.js"></script>
+    <script src="/assets/js/components/footer.js"></script>
+</head>
+
+<div id="app">
+
+    <body>
+        <div class="header">
+
+            <shopping-cart ref="cartComponent"></shopping-cart>
+
+            <nav-comp></nav-comp>
+            <img src="assets/images/logo.png" alt="logo">
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-lg-6"></div>
+
+                <div class="card-body text-center">
+                    <button class="button">Add to Cart</button>
+                </div>
+                <h5 class="card-title"> Martialarts</h5>
+                <div class="img-hover-zoom">
+                    <img src="assets/images/martialarts.jpg" alt="Martialarts">
+
+                </div>
+                <div class="d-flex  justify-content-between align-items-right mt-3 mb-3"> <span>Available colors</span>
+                    <div class="colors"> <span></span> <span></span> <span></span> <span></span> </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- <div class="card">
+            <img src="assets/images/martialarts.jpg" alt="martialarts" style="width:50%">
+            <h1>Women Tshirts</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+        </div> -->
+
+
+
+        <footer-comp></footer-comp>
+
+</div>
+
+
+
+
+
+</body>
+
+
+
+
+
+</div>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/proof.js"></script>
+<script src="assets/js/productpage.js"></script>
+
+
+
+</html>
